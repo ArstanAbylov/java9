@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Block - Accordion */
+
+.accordion {
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+
+/* Modifiler - Open */
+
+.accordion--closed .accordion__content {
+    display: none;
+}
+
+
+/* Element - Header */
+
+.accordion__heder {
+    padding: .5rem 1rem;
+    background-color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Element - Content */
+
+.accordion__content {
+    border-top: 1px solid lightgray;
+    padding: .5rem 1rem;
+}
+
+
+/* Modifiler - Open */
+
+.accordion--open .accordion__content {
+    display: block;
+}
